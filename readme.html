@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>O95KG PSX</title>
+    </head>
+   <body style="background-color:black; color:white;">
+
+<h1>Open95Keygen PSX</h1> 
+<p>by Alex Free</p>
+
+<p>Open95Keygen PSX is an open source Playstation 1 homebrew program that generates random valid Product Keys (both OEM and Retail types) for Microsoft's Windows 95 and Windows NT 4.0 operating systems. It is a port of my <a href=https://alex-free.github.io/open95keygen>Open95Keygen</a> program to the PSX.</p>
+
+<img src="https://alex-free.github.io/open95keygen-psx/o95kg_psx_pcsxr.png" alt="open 95 keygen psx in pcsxr" width="600">
+
+<p>The Windows 95/NT 4.0 OEM/Retail Product Key algorithms have been reverse engineered by many people. Open95Keygen is a <b><a href=https://en.wikipedia.org/wiki/Clean_room_design>clean room design</a></b> implementation not based on any existing software, it is written based on the specifications of the algorithm which is <b>inherently not copyright infringement</b>. I was inspired to write Open95Keygen after watching the YouTuber <a href=https://www.youtube.com/channel/UC3S8vxwRfqLBdIhgRlDRVzw>stack smashing's</a> video <a href=https://www.youtube.com/watch?v=cwyH59nACzQ>Why 111-1111111 is a valid Windows 95 key</a>.</p>
+
+<p><a href=https://github.com/alex-free/open95keygen-psx>GitHub</a> || <a href=https://alex-free.github.io/open95keygen-psx>HomePage</a></p>
+
+<h2>Table Of Contents</h2>
+<ul><li><a href="#downloads">Downloads</a></li>
+<li><a href="#compat">Supported Consoles</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#changelog">Changlog</a></li>
+<li><a href="#install_source">Install From Source</a></li>
+<li><a href="#license">License</a></li></ul>
+
+<a name=downloads><h2>Downloads</h2></a>
+<h3>Version 1.0 (5/11/2021)</h3>
+<p><a href=https://github.com/alex-free/open95keygen-psx/releases/download/1.0/open95keygen-psx_1.0_us.zip>Open 95 Keygen PSX for American Playstations</a></p>
+<p><a href=https://github.com/alex-free/open95keygen-psx/releases/download/1.0/open95keygen-psx_1.0_jp.zip>Open 95 Keygen PSX for Japanese Playstations</a></p>
+<p><a href=https://github.com/alex-free/open95keygen-psx/releases/download/1.0/open95keygen-psx_1.0_exe.zip>Open 95 Keygen PSX .exe file</a></p>
+<p><a href=https://github.com/alex-free/open95keygen-psx/archive/1.0.zip>Source Code</a></p>
+<p>View <a href=https://github.com/alex-free/open95keygen-psx/releases/>all releases</a>.</p>
+
+<a name=compat><h2>Supported Consoles</h2></a>
+
+<p><b>All</b> consoles are supported. You will need to use a swap trick (use the OG <a href=https://gamefaqs.gamespot.com/ps/916392-playstation/faqs/4708>Swap Trick Guide</a> from 1996) or boot disc (such as the PSX Change)if your console does not have a modchip installed. You'll need a dual analog, dual shock, or standard digital pad controller.</p> 
+
+<a name=usage><h2>Usage</h2></a>
+
+<p>First, <a href="#downloads">download</a> the right release for your console, or compile Open95Keygen PSX from <a href="#install_source">source</a>.</p>
+<p>Burn and boot a CD-R, or load the standalone .exe by other means.</p>
+<p>Make sure a controller is connected, and simply press the cross button. Retail and OEM Product Keys will be displayed. You can press the cross button for even more keys as much as you want.</p>
+
+<a name=changelog><h2>Changelog</h2></a>
+
+<p>Version 1.0 - 5/11/2021</p>
+<ul><li>First release.</li></ul>
+
+<a name=install_source><h2>Install From Source</h2></a>
+
+<p>Open95Keygen PSX is made using <a href=https://github.com/Lameguy64/>Lameguy64's</a> <a href=https://github.com/Lameguy64/PSn00bSDK>PSn00bSDK</a> and <a href=https://github.com/Lameguy64/mkpsxiso>MKPSXISO</a>. This is the expected setup:</p>
+
+<ul><li>MKPSXISO somewhere in your <code>$PATH</code>.</li>
+<li>MIPS-unknown-elf toolchain at <code>/usr/local/mips-unknown-elf</code>.</li>
+<li>PSn00bSDK at <code>/usr/local/mips-unknown-elf/psn00bsdk</code>.</li>
+<li><b>(Optional)</b> pcsxr somewhere in your <code>$PATH</code>.</li></ul>
+
+<p>Next you need to place the file <code>LICENSEA.DAT</code> (for building US bin+cue) and or <code>LICENSEJ.DAT</code> (for building Japan bin+cue) in the same directory as the makefile to license the built images. These files can be obtained from the official PSX PSYQ SDK.</p>
+
+<p>Make rules:</p>
+
+<ul><li><code>make</code> - just build o95kg.exe.</li>
+<li><code>make us-cd</code> - build o95kg.exe and create bin+cue files for american playstations.</li>
+<li><code>make jp-cd</code> - build o95kg.exe and create bin+cue files for japanese playstations.</li>
+<li><code>make clean</code> - delete any files built with an above rule.</li>
+<li><code>make test</code> - Load your previously created bin+cue files with the PCSXR emulator.</li></ul>
+
+<a name=license><h2>License</h2></a>
+<p>This license is distributed with Open95Keygen PSX:</p>
+<pre><code>BSD 3-Clause License
+
+Copyright (c) 2021, Alex Free
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+* Neither the name of the copyright holder nor the names of its
+  contributors may be used to endorse or promote products derived from
+  this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</code></pre>
+
+</body>
